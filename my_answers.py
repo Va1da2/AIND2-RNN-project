@@ -40,7 +40,7 @@ def build_part1_RNN(window_size):
 ### TODO: return the text input with only ascii lowercase and the punctuation given below included.
 def cleaned_text(text):
     punctuation = ['!', ',', '.', ':', ';', '?']
-    pattern = '[^0-9a-zA-Z' + ''.join(punctuation) + ']'
+    pattern = '[^a-zA-Z' + ''.join(punctuation) + ']'
     text2 = re.sub(pattern, ' ', text)
     return text2
 
